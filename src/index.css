@@ -74,7 +74,15 @@ button:hover {
 }
 
 .navbar h2 {
-  color: #38bdf8;
+  color: #38bdf8;  
+}
+
+@media(max-width:768px){
+
+  .navbar h2{
+    font-size:24px;
+  }
+
 }
 
 .nav-links {
@@ -647,4 +655,283 @@ button:hover {
   background: #020617;
   color: #cbd5e1;
   font-size: 15px;
+}
+
+
+
+
+@media(max-width:768px){
+
+body{
+  overflow-x:hidden;
+}
+
+
+/* Navbar */
+
+.navbar{
+  padding:15px 20px;
+  flex-direction:column;
+}
+
+.nav-links{
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:12px;
+}
+
+.nav-links a{
+  font-size:16px;
+}
+
+
+/* Hero */
+
+.hero{
+  min-height:auto;
+  padding:120px 20px 40px;
+}
+
+
+.hero-container{
+  flex-direction:column;
+  gap:20px;
+}
+
+
+.hero-image img{
+  width:180px;
+  height:180px;
+}
+
+
+.hero h1{
+  font-size:38px;
+}
+
+
+.hero h2{
+  font-size:22px;
+}
+
+
+.hero p{
+  font-size:16px;
+}
+
+
+/* Buttons */
+
+.hero-buttons{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+
+/* General sections */
+
+.about,
+.skills,
+.projects,
+.education,
+.contact{
+  padding:60px 20px;
+}
+
+
+/* Project cards */
+
+.projects-container{
+  grid-template-columns:1fr;
+}
+
+
+/* Contact form */
+
+.contact-form{
+  width:100%;
+}
+
+
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media(max-width:768px) {
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
+
+  .menu-icon {
+    display:block;
+    font-size:30px;
+    cursor:pointer;
+    z-index:2000;
+  }
+
+
+  .nav-links {
+
+    display:flex;
+
+    position:fixed;
+
+    top:0;
+    right:-100%;
+
+    width:180px;
+    height:100vh;
+
+    background:#0f172a;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    padding:90px 25px;
+
+    gap:22px;
+
+    transition:0.3s ease;
+
+    z-index:1500;
+
+  }
+
+
+  .nav-links.active {
+
+    right:0;
+
+  }
+
+
+  .nav-links a {
+
+    font-size:17px;
+
+    color:white;
+
+  }
+
+
+}
+
+.menu-title {
+  color: #38bdf8;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Mobile Font Sizes */
+
+@media(max-width:768px){
+
+
+  .hero h1{
+    font-size:34px;
+  }
+
+
+  .hero h2{
+    font-size:20px;
+  }
+
+
+  .hero p{
+    font-size:15px;
+  }
+
+
+
+  .about-content h2{
+    font-size:32px;
+  }
+
+
+  .about-content h3{
+    font-size:20px;
+  }
+
+
+  .about-content p{
+    font-size:15px;
+  }
+
+
+
+  .skills h2,
+  .projects h2,
+  .education h2,
+  .contact h2{
+    font-size:32px;
+  }
+
+
+
+  .skills-intro,
+  .project-intro,
+  .contact-content p{
+    font-size:15px;
+  }
+
+
+
+  .skill-card h3,
+  .project-card h3,
+  .education-card h3{
+    font-size:20px;
+  }
+
+
+
+  .skill-card p,
+  .project-card p,
+  .education-card p{
+    font-size:15px;
+  }
+
+
+
+  .project-details h1{
+    font-size:32px;
+  }
+
+
+  .project-details h2{
+    font-size:22px;
+  }
+
+
+  .project-details h3{
+    font-size:20px;
+  }
+
+
+  .project-details p,
+  .project-details li{
+    font-size:15px;
+  }
+
+
+}
+
+@media(max-width:768px){
+
+  .projects,
+  .skills,
+  .about,
+  .education,
+  .contact,
+  .project-details {
+    padding-top: 100px;
+  }
+
 }
